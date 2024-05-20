@@ -1,4 +1,4 @@
-import 'dotenv/config';
+require('dotenv').config();
 import fetch from 'node-fetch';
 
 const client_id = process.env.SPOTIFY_CLIENT_ID;
@@ -18,8 +18,7 @@ async function getAccessToken() {
     return data.access_token;
 }
 
-async function getTopTracks() {
-    const accessToken = await getAccessToken();
+async function getTopTracks(accessToken) {
     const response = await fetch('https://api.spotify.com/v1/browse/categories/toplists/playlists', {
         method: 'GET',
         headers: {
@@ -28,13 +27,20 @@ async function getTopTracks() {
     });
 
     const data = await response.json();
-    return data;
+    return data.playlists.items;
 }
 
 (async () => {
     try {
-        const topTracks = await getTopTracks();
-        console.log(topTracks);
+        const accessToken = await getAccessToken();
+        const topPlaylists = await getTopTracks(accessToken);
+        
+        const formattedData = topPlaylists.map(playlist => ({
+            name: playlist.name,
+            tracksUrl: playlist.tracks.href,
+        }));
+
+        console.log(formattedData);
     } catch (error) {
         console.error('Error fetching data from Spotify API:', error);
     }

@@ -1,0 +1,36 @@
+// src/mockData.js
+const mockSongs = [
+    { id: 1, name: "Bohemian Rhapsody", artist: "Queen", votes: 1200 },
+    { id: 2, name: "Stairway to Heaven", artist: "Led Zeppelin", votes: 1100 },
+    { id: 3, name: "Hotel California", artist: "Eagles", votes: 1050 },
+    { id: 4, name: "Sweet Child O' Mine", artist: "Guns N' Roses", votes: 980 },
+    { id: 5, name: "Imagine", artist: "John Lennon", votes: 950 },
+    { id: 6, name: "Smells Like Teen Spirit", artist: "Nirvana", votes: 900 },
+    { id: 7, name: "Billie Jean", artist: "Michael Jackson", votes: 880 },
+    { id: 8, name: "Hey Jude", artist: "The Beatles", votes: 870 },
+    { id: 9, name: "Like a Rolling Stone", artist: "Bob Dylan", votes: 860 },
+    { id: 10, name: "I Want to Hold Your Hand", artist: "The Beatles", votes: 850 },
+    { id: 11, name: "Purple Haze", artist: "Jimi Hendrix", votes: 840 },
+    { id: 12, name: "Born to Run", artist: "Bruce Springsteen", votes: 830 },
+    { id: 13, name: "What's Going On", artist: "Marvin Gaye", votes: 820 },
+    { id: 14, name: "Good Vibrations", artist: "The Beach Boys", votes: 810 },
+    { id: 15, name: "Yesterday", artist: "The Beatles", votes: 800 },
+    { id: 16, name: "Respect", artist: "Aretha Franklin", votes: 790 },
+    { id: 17, name: "God Only Knows", artist: "The Beach Boys", votes: 780 },
+    { id: 18, name: "A Day in the Life", artist: "The Beatles", votes: 770 },
+    { id: 19, name: "My Generation", artist: "The Who", votes: 760 },
+    { id: 20, name: "Superstition", artist: "Stevie Wonder", votes: 750 },
+    { id: 21, name: "Imagine", artist: "John Lennon", votes: 740 },
+    { id: 22, name: "Johnny B. Goode", artist: "Chuck Berry", votes: 730 },
+    { id: 23, name: "Good Golly Miss Molly", artist: "Little Richard", votes: 720 },
+    { id: 24, name: "Heartbreak Hotel", artist: "Elvis Presley", votes: 710 },
+    { id: 25, name: "What'd I Say", artist: "Ray Charles", votes: 700 },
+    { id: 26, name: "Whole Lotta Love", artist: "Led Zeppelin", votes: 690 },
+    { id: 27, name: "Dancing Queen", artist: "ABBA", votes: 680 },
+    { id: 28, name: "No Woman, No Cry", artist: "Bob Marley & The Wailers", votes: 670 },
+    { id: 29, name: "Bridge Over Troubled Water", artist: "Simon & Garfunkel", votes: 660 },
+    { id: 30, name: "Light My Fire", artist: "The Doors", votes: 650 },
+  ];
+  
+  export default mockSongs;
+  
